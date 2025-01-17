@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="../resources/css/edit-item.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>Admin</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="manage-users.html">Account</a></li>
+                <li><a href="manage-category.html">Category</a></li>
+                <li><a href="manage-item.html" class="active">Item</a></li>
+                <li><a href="manage-review.html">Review</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Edit Item</h1>
+        </header>
+        <form class="edit-item-form" action="save-item.html" method="POST" enctype="multipart/form-data">
+            <!-- Item ID -->
+            <div class="form-group">
+                <label for="item-id">Item ID</label>
+                <input type="text" id="item-id" name="item-id" value="001" readonly>
+            </div>
+            
+            <!-- Category -->
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="White T-shirt">White T-shirt</option>
+                    <option value="Hoodie">Hoodie</option>
+                </select>
+            </div>
+
+            <!-- Image -->
+            <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image">
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="5"></textarea>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+                <button type="submit" class="save-btn">Save</button>
+                <a href="manage-item.html" class="cancel-link">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Admin Panel</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Account</title>
+    <link rel="stylesheet" href="../resources/css/add-user.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Virtual Try-On Admin</div>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="manage-users.html" class="active">Account</a></li>
+            <li><a href="manage-category.html">Category</a></li>
+            <li><a href="manage-item.html">Item</a></li>
+            <li><a href="manage-review.html">Review</a></li>
+            <li><button class="logout">Logout</button></li>
+        </ul>
+    </nav>
+
+    <!-- Add User Section -->
+    <section id="add-user">
+        <h1>Add New User</h1>
+
+        <!-- Add User Form -->
+        <div class="add-user-form">
+            <form action="/submit-user" method="POST">
+                <!-- User ID -->
+                <div class="input-group">
+                    <label for="user-id">User ID:</label>
+                    <input type="text" id="user-id" name="user_id" placeholder="Enter User ID" required>
+                </div>
+
+                <!-- Name -->
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <!-- Birthday -->
+                <div class="input-group">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+
+                <!-- Status -->
+                <div class="input-group">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="Admin">Admin</option>
+                        <option value="User">User</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Add User</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
