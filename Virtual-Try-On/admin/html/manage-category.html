@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="../resources/css/manage-category.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>Admin</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="manage-users.html">Account</a></li>
+                <li><a href="manage-category.html" class="active">Category</a></li>
+                <li><a href="manage-item.html">Item</a></li>
+                <li><a href="manage-review.html">Review</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Manage Categories</h1>
+        </header>
+
+        <main>
+            <!-- Add Category Button -->
+            <div class="add-category-btn">
+                <a href="add-category.html" class="add-category-link">Add New Category</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search categories by name">
+                <button>Search</button>
+            </div>
+
+            <!-- Category Table -->
+            <table class="category-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Category Name</th>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Luxury Cars</td>
+                        <td>
+                            <img src="../resources/images/luxury-car.jpg" alt="Luxury Cars">
+                        </td>
+                        <td>
+                            <a href="edit-category.html">
+                                <button class="edit-btn">Edit</button>
+                            </a>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Motorbikes</td>
+                        <td>
+                            <img src="../resources/images/motorbike.jpg" alt="Motorbikes">
+                        </td>
+                        <td>
+                            <a href="edit-category.html">
+                                <button class="edit-btn">Edit</button>
+                            </a>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Virtual Try-On Admin</p>
+    </footer>
+</body>
+</html>
